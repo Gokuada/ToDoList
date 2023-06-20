@@ -7,10 +7,23 @@ function addTask() {
     if (input.value === '') {
         alert ('Vous devez écrire quelque chose ')
     } else {
-        let li= document.createElement('li');
+        let li= document.createElement("li");
         li.innerHTML= input.value;
-        container.appendChild(li); 
+        container.appendChild(li);
+        let span = document.createElement("span");
+        span.innerHTML = "\u00d7";
+        li.appendChild(span);
     }
-    input.value=""
+    input.value="";
     console.log(addTask)  
 }
+container.addEventListener("click", function(e){
+    if(e.target.tagName === 'LI') {
+        e.target.classList.toggle("checked");
+    }
+    else if (e.target.tagName === "SPAN"){
+        e.target.parentElement.remove();
+
+    }
+}, false);
+
