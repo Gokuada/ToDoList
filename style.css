@@ -50,10 +50,10 @@ input {
 button {
     border:none;
     outline:none;
-    padding:10px 50px;
+    padding:22px 50px;
     background: #ff5945;
-    color: white;
-    font-size:14px;
+    color: rgb(170, 170, 170);
+    font-size:17px;
     cursor:pointer;
     border-radius:40px;
 }
@@ -76,4 +76,11 @@ ul li::before {
     background-position: center;
     top: 1px;
     left:1px;
+}
+ul li.checked{
+    color:#555;
+    text-decoration: line-through
+}
+ul li.checked::before{
+    background-image: url(images/checked.png);
 }
