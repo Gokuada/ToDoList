@@ -50,9 +50,9 @@ input {
 button {
     border:none;
     outline:none;
-    padding:22px 50px;
+    padding:22px 49px;
     background: #ff5945;
-    color: rgb(170, 170, 170);
+    color: rgb(255, 255, 255);
     font-size:17px;
     cursor:pointer;
     border-radius:40px;
@@ -60,7 +60,7 @@ button {
 ul li{
     list-style:none;
     font-size: 16px;
-    padding: 6px 17px 25px 40px;
+    padding: 1px 17px 25px 40px;
     user-select:none;
     cursor: pointer;
     position: relative;
@@ -87,11 +87,11 @@ ul li.checked::before{
 ul li span{
     position: absolute;
     right:0;
-    top:5px;
+    top:1px;
     width:40px;
     height: 40px;
     font-size: 22px;
     color: #555;
-    line-height:40px;
+    line-height:21px;
     text-align: center;
 }

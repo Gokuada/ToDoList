@@ -31,7 +31,9 @@ container.addEventListener("click", function(e){
 
 function saveData(){
     localStorage.setItem("data",container.innerHTML);
+    console.log("fhfjhuhgv",saveData)
 }
+
 function showTask(){
     container.innerHTML = localStorage.getItem("data");
 }
